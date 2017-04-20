@@ -1,0 +1,4 @@
+-main Index
+-cp ../../src
+-js index.js
+-lib threejs

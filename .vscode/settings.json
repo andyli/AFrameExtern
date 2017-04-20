@@ -1,0 +1,6 @@
+{
+    "haxe.displayConfigurations": [
+        ["test.hxml"],
+        ["--cwd test/entity-count", "build.hxml"]
+    ]
+}

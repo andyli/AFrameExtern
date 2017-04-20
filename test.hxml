@@ -1,0 +1,3 @@
+--next
+--cwd test/entity-count
+build.hxml
