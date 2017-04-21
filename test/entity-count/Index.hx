@@ -3,7 +3,7 @@ import aframe.*;
 
 class Index {
     static function main():Void {
-        var cubeEl:Entity;
+        var cubeEl:AEntity;
         var sceneEl = document.querySelector('a-scene');
         var x = -90;
         var z = -10;

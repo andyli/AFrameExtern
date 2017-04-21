@@ -3,12 +3,13 @@ package aframe;
 import js.three.Object3D;
 import js.three.Group;
 
-extern class Entity extends js.html.Element {
-    public var components:Dynamic<Component>;
+@:native("AFRAME.AEntity")
+extern class AEntity extends js.html.Element {
+    public var components:Dynamic<AComponent>;
     public var isPlaying:Bool;
     public var object3D:Group;
     public var object3DMap:Dynamic<Object3D>;
-    public var sceneEl:Scene;
+    public var sceneEl:AScene;
 
     public function addState(stateName:String):Void;
 
