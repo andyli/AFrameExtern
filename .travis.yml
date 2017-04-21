@@ -1,0 +1,18 @@
+language: haxe
+
+haxe:
+  - development
+  - "3.4.2"
+
+matrix:
+  allow_failures:
+    - haxe: development
+
+dist: trusty
+sudo: false
+
+install:
+  - haxelib install all --always
+
+script:
+  - haxe test.hxml
