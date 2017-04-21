@@ -12,7 +12,7 @@ dist: trusty
 sudo: false
 
 install:
-  - haxelib install all --always
+  - haxelib install threejs --always
 
 script:
   - haxe test.hxml
