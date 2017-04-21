@@ -4,7 +4,7 @@ import js.three.Object3D;
 import js.three.Group;
 
 @:native("AFRAME.AEntity")
-extern class AEntity extends js.html.Element {
+extern class AEntity extends ANode {
     public var components:Dynamic<AComponent>;
     public var isPlaying:Bool;
     public var object3D:Group;
@@ -12,8 +12,6 @@ extern class AEntity extends js.html.Element {
     public var sceneEl:AScene;
 
     public function addState(stateName:String):Void;
-
-    public function emit(name:String, detail:Dynamic, bubbles:Bool = true):Void;
 
     public function flushToDOM(recursive:Bool):Void;
 

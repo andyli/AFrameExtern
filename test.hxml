@@ -1,3 +1,9 @@
+-js all.js
+-cp src
+-lib threejs
+--macro include("aframe")
+--no-output
+
 --next
 --cwd test/entity-count
 build.hxml
